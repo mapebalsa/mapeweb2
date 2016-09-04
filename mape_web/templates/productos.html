@@ -1,0 +1,55 @@
+{% extends 'base.html'%}
+{% load staticfiles %}
+<nav class="navbar navbar-light bg-faded">
+
+<!-- Brand -->
+<a class="navbar-brand" href="#">Logo</a>
+
+<!-- Links -->
+<ul class="nav navbar-nav">
+<li class="nav-item">
+<a class="nav-link" href="#">Link 1</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#">Link 2</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#">Link 3</a>
+</li>
+</ul>
+</nav>
+<!--
+O<nav class="navbar navbar-inverse navbar-fixed-top">
+<div class='container-fluid'
+<div class="row-md-8">
+<ul >
+<li><a ref="/catalog/">Home</a></li>
+<li><a ref="/catalog/">About</a></li>
+<li><a ref="/catalog/">Privacy</a></li>
+<li><a ref="/catalog/">Products</a></li>
+<li><a ref="/catalog/">Contact</a></li>
+</ul>
+</div>
+</div>
+</nav>
+-->
+<!--
+
+{%block body_block%}
+{% if categorias %}
+
+<ul> 
+	{% for categoria in categorias %}
+		<li><a href="categoria/{{categoria.slug}}"> {{categoria.name}} </a> ia {{categoria.slug}} aa  {{category_name_slug}}</li> 
+	{% endfor %}
+</ul> 
+{%else%}
+La categoria {{cagetory_name}} No existe!
+{% endif %}
+
+
+ <img src = "{% static "images/figure.jpg" %}" /> 
+        hello world! <strong>{{ boldmessage }}</strong><br />
+        <a href="/rango/about/">About</a><br />
+-->
+{%endblock%}
